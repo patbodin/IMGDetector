@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IMGDetector
 {
@@ -15,6 +16,7 @@ namespace IMGDetector
         public Form1()
         {
             InitializeComponent();
+            //listView1.Columns.Add("Image Source", -2, HorizontalAlignment.Left);
         }
     }
 }
