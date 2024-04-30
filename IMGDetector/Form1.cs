@@ -47,7 +47,8 @@ namespace IMGDetector
                     string src = img.GetAttributeValue("src", string.Empty);
                     string[] splitSrc = src.Split(',');
                     //MessageBox.Show(src.Substring(0, 30));
-                    string[] itemStr = new string[] { (count++).ToString(), 
+                    string[] itemStr = new string[] { 
+                        (count++).ToString(), 
                         splitSrc.Count() > 1 ? splitSrc[1] : "NO DATA", 
                         splitSrc.Count() > 1 ? splitSrc[1].Length.ToString() : "NO DATA",
                         splitSrc[1].Length > limitChar ? "True" : ""
