@@ -64,5 +64,15 @@ namespace IMGDetector
                 MessageBox.Show("No <img> tags found!");
             }
         }
+
+        private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Text == "Copy")
+            {
+                //MessageBox.Show("Test");
+                //MessageBox.Show(listView1.SelectedItems[0].SubItems[1].Text);
+                Clipboard.SetText(listView1.SelectedItems[0].SubItems[1].Text);
+            }
+        }
     }
 }
